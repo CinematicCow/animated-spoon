@@ -118,7 +118,8 @@
     "build": "cross-env NODE_PATH=./src node scripts/build.js",
     "test": "cross-env NODE_PATH=./src node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "serve": "serve -s build -l 4000"
   },
   "jest": {
     "collectCoverageFrom": [
